@@ -8,7 +8,7 @@ function mostrarDados(dados) {
     Math.floor(dados.main.temp) + "°c";
   document.querySelector(".textoprevisao").innerHTML =
     dados.weather[0].description;
-  document.querySelector(".Umidade").innerHTML = dados.main.humidity + "%";
+  document.querySelector(".Umidade").innerHTML ="Umidade: "+ dados.main.humidity + "%";
   document.querySelector(
     ".img_previsao"
   ).src = `https://openweathermap.org/img/wn/${dados.weather[0].icon}.png`;
